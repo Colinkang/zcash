@@ -9,8 +9,6 @@ const utils = require('./utils');
         else resolve(body);
       });
   });
-  // let payee = 'Zcash－flypool 矿池';
-  // let description = '挖币收入－矿厂';
  let payouts = JSON.parse(body).payouts;
  for(let i =0;i<payouts.length;i++){
   let query = utils.queryFormat('select * from payouts where payoutsid = ?',[payouts[i].id]);
@@ -20,7 +18,6 @@ const utils = require('./utils');
     console.log(query);
     await utils.P(utils.pool,'query',query);
   }
-
+  //let avgHashrate = JSON.parse(body).avgHashrate;
  }
-  //console.log(body);
 }());

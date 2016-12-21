@@ -31,6 +31,7 @@
     "babel-plugin-transform-es2015-parameters": "^6.6.4",
     "babel-plugin-transform-es2015-spread": "^6.6.4",
     "babel-plugin-transform-strict-mode": "^6.6.4",
+    "excel-export": "^0.5.1",
     "mysql": "^2.12.0",
     "node-xlsx": "^0.7.4",
     "request": "^2.79.0"
