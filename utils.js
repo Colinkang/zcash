@@ -39,10 +39,6 @@ const queryFormat = mysql.format;
       }else{
         queryString = mysql.format(args[0],args[1]);
       }
-      // if(config.env === 'prod')
-      //   mysqlLogger.info(`[MYSQL] ${queryString}`);
-      // else
-      //   mysqlLogger.trace(`[MYSQL] ${queryString}`);
     }
     that[fn].apply(that,args);
   });
